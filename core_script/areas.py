@@ -93,6 +93,3 @@ while True:
         num1 = float(input("Masukan Diameter / Perimeter (Bisa Didapatkan Dari No.7)"))
     if choice == '9':
         print("π Dikali", num1, "Pangkat 2 Sama Dengan", circle_3_14(num1))
-       break
-     else:
-        print("Input Yang Kamu masukan Tidak Valid !")
