@@ -14,6 +14,7 @@ echo    =============================
 echo Welcome To : VHID.TECH Project
 
 echo Author By : Zack_#4064
+                 CoolNuttle#3261
 
 
 goto checking_py
@@ -42,11 +43,13 @@ ECHO Please turn on CAPS Lock
 ECHO 1. Basic Math[1]
 ECHO 2. Area Math [2]
 ECHO 3. Volume Math [3]
+ECHO 4. Perimeter Math [4]
 ECHO (Other Math / Music Coming Soon)
-ECHO 4.Exit [E]
+ECHO 5.Exit [E]
 ECHO.
-CHOICE /C 1234E /M "What Do You Want To Start ?"
-IF ERRORLEVEL 4 exit
+CHOICE /C 12345E /M "What Do You Want To Start ?"
+IF ERRORLEVEL 5 exit
+IF ERRORLEVEL 4 GOTO mulai_perimeter
 IF ERRORLEVEL 3 GOTO mulai_volume
 IF ERRORLEVEL 2 GOTO mulai_area
 IF ERRORLEVEL 1 GOTO mulai_basic
@@ -65,5 +68,10 @@ goto pilihan
 
 :mulai_volume
 python core_script/volume.py
+
+goto pilihan
+
+:mulai_perimeter
+python core_script/perimeter.py
 
 goto pilihan
