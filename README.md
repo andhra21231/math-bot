@@ -14,6 +14,6 @@ What Feature At Coming V.0.2 ?
 What We Need Fix It ?
 > Runner.bat -_
 
-> And Virtualenv For Client Runner.
+> IDK virtualenv will working properly or not 
 
 Develop By : VHCID.TECH
