@@ -14,7 +14,7 @@ echo    =============================
 echo Welcome To : VHID.TECH Project
 
 echo Author By : Zack_#4064
-                 CoolNuttle#3261
+echo helping dev : CoolNuttle#3261               
 
 
 goto checking_py
@@ -44,11 +44,13 @@ ECHO 1. Basic Math[1]
 ECHO 2. Area Math [2]
 ECHO 3. Volume Math [3]
 ECHO 4. Perimeter Math [4]
+ECHO 5. Hypotenus Math [5]
 ECHO (Other Math / Music Coming Soon)
-ECHO 5.Exit [E]
+ECHO 6.Exit [E]
 ECHO.
-CHOICE /C 12345E /M "What Do You Want To Start ?"
-IF ERRORLEVEL 5 exit
+CHOICE /C 123456E /M "What Do You Want To Start ?"
+IF ERRORLEVEL 6 exit
+IF ERRORLEVEL 5 GOTO mulai_hypotenus
 IF ERRORLEVEL 4 GOTO mulai_perimeter
 IF ERRORLEVEL 3 GOTO mulai_volume
 IF ERRORLEVEL 2 GOTO mulai_area
@@ -75,3 +77,6 @@ goto pilihan
 python core_script/perimeter.py
 
 goto pilihan
+
+:mulai_hypotenus
+python core_script/hypotenus.py
