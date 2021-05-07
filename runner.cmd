@@ -45,11 +45,13 @@ ECHO 2. Area Math [2]
 ECHO 3. Volume Math [3]
 ECHO 4. Perimeter Math [4]
 ECHO 5. Hypotenus Math [5]
+ECHO 6. Surface Area Math [6]
 ECHO (Other Math / Music Coming Soon)
-ECHO 6.Exit [E]
+ECHO 7.Exit [E]
 ECHO.
-CHOICE /C 123456E /M "What Do You Want To Start ?"
-IF ERRORLEVEL 6 exit
+CHOICE /C 1234567E /M "What Do You Want To Start ?"
+IF ERRORLEVEL 7 exit
+IF ERRORLEVEL 6 GOTO mulai_surface-area
 IF ERRORLEVEL 5 GOTO mulai_hypotenus
 IF ERRORLEVEL 4 GOTO mulai_perimeter
 IF ERRORLEVEL 3 GOTO mulai_volume
@@ -80,3 +82,8 @@ goto pilihan
 
 :mulai_hypotenus
 python core_script/hypotenus.py
+
+:mulai_surface-area
+python core_script/surface-area.py
+
+goto pilihan
