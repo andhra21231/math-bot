@@ -6,11 +6,11 @@ def cube(x):
 
 
 def cylinder(x, y):
-    return (2 * 3.14 * x * x) + (2 * 3.14 * x * y)
+    return 2 * 22/7 * x * (x + y)
 
 
 def cylinder_2(x, y):
-    return 2 * 22 / 7 * x * x + 2 * 22 / 7 * x * y
+    return 2 * 3.14 * x * (x + y)
 
 
 def balok(x, y, z):
@@ -39,8 +39,8 @@ def pyramid(x, y, z):
 
 print("Apa Yang Ingin Kamu Kalkulasi ? ")
 print("1. Kotak")
-print("2. silinder Dengan 3.14")
-print("3. Silinder Dengan 22 / 7")
+print("2. silinder Dengan 22/7")
+print("3. Silinder Dengan 3.14")
 print("4. balok")
 print("5. bola 3.14")
 print("6. bola 22 / 7")
@@ -58,23 +58,23 @@ while True:
         print("6 x", num1, "pangkat 2 sama dengan", cube(num1))
 
     if choice in ('2'):
-        num1 = float(input("tinggi dari silindernya : "))
-        num2 = float(input("masukan radius alas silindernya :"))
+        num1 = float(input("Masukkan radius alas : "))
+        num2 = float(input("Masukkan tinggi silinder :"))
 
     if choice == '2':
-        print("2 x 3.14 x ", num2, "pangkat 2 + 2 x 3.14 x ",num2, "x",num1, "=", cylinder(num2, num1))
+        print("2 x 22/7 x", num1, "x (", num1, "+", num2, ") hasilnya", cylinder(num1, num2))
 
     if choice in ('3'):
-        num1 = float(input("tinggi dari silindernya : "))
-        num2 = float(input("masukan radius alas silindernya :"))
+        num1 = float(input("Masukkan radius alas : "))
+        num2 = float(input("Masukkan tinggi silinder :"))
 
     if choice == '3':
-        print("2 x 22/7 x ", num2, "pangkat 2 + 2 x 22/7 x ",num2, "x",num1, "=", cylinder_2(num2, num1))
+        print("2 x 3.14 x", num1, "x (", num1, "+", num2, ") hasilnya", cylinder_2(num1, num2)) 
 
     if choice in ('4'):
         num1 = float(input("Masukan Panjang :"))
         num2 = float(input("Masukan Lebar : "))
-        num3 = float(input("Masukan Tinggi : "))
+        num3 = float(input("Masukan Tinggi : "))    
 
     if choice == '4':
         print("2 x ", num1, "x", num2, "+", "2 x ", num1, "x", num3, "+ 2 x ",num2, "x", num3, "=", balok(num1, num2, num3))
