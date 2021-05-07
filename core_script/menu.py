@@ -13,10 +13,10 @@ class Example(QMainWindow):
         self.setMinimumSize(QSize(320, 200))
         self.setWindowTitle("MathBot - VHCID.TECH")
 
-        self.bt1 = QPushButton("Start Basic Math", self)
-        self.bt2 = QPushButton("Start Areas Math", self)
-        self.bt3 = QPushButton('Start Volume Math', self)
-        self.bt4 = QPushButton('Start Surface Math', self)
+        self.bt1 = QPushButton('Start Basic Calculation', self)
+        self.bt2 = QPushButton('Start Areas Calculation', self)
+        self.bt3 = QPushButton('Start Volume Calculation', self)
+        self.bt4 = QPushButton('Start Surface Calculation', self)
         self.bt5 = QPushButton('Start Hypotenuse', self)
         self.bt6 = QPushButton('Turn Off', self)
 
