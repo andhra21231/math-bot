@@ -1,19 +1,25 @@
 # Mathematic Calculation Bot
 ### Introducing New Way To Calculation 
 
-Whats Feature You Get It At V.0.1 Dev Mode ?
-> Basic Calculation : + - x 
+## What Feature At 0.3.5 Version ?
 
-> Area Calculation : Square Areas , Triangle Areas , More !!
+> Add Auto Download Dependencies
+> Add .EXE menu 
+> Configuration For Next Version
 
-What Feature At Coming V.0.2 ?
-> More Calculation
+### How To Download 
 
-> And Music Bot :D (Still Developing Mode Until V.0.5 Maybe)
+First Lets Git Copy This Repository : 
+```
+git clone https://github.com/andhra21231/math-bot 
 
-What We Need Fix It ?
-> Runner.bat -_
+```
 
-> IDK virtualenv will working properly or not 
+After That. Just Start The Bot :)
 
-Develop By : VHCID.TECH
+```
+cd /math-bot
+start runner.bat
+```
+
+Simple :)
